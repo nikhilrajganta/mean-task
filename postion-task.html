@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        place-content: center;
+        background: white;
+        display: grid;
+      }
+      .image {
+        background: url("https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png");
+        height: 250px;
+        width: 250px;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: 3px solid;
+        position: relative;
+        box-shadow: 5px 5px 5px 5px grey;
+      }
+
+      .image:hover .notification {
+        transform: rotate(360deg);
+      }
+      .notification {
+        height: 50px;
+        /* width: 32px; */
+        aspect-ratio: 1 /1;
+        background: whitesmoke;
+        border: 1px solid;
+        border-radius: 50%;
+        display: grid;
+        /* align-content: space-around; */
+        justify-content: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        align-content: center;
+        font-size: 28px;
+        transition: all 1.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image">
+      <div class="notification"><h4>8</h4></div>
+    </div>
+  </body>
+</html>

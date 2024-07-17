@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>CSS is cool!!!</h1>
+    <h1>CSS is Awesome!!!</h1>
+    <span id="note">Welcome to HYD</span>
+    <h2 class="fun">New movies list is here</h2>
+    <h2 class="fun">Old movies list is here</h2>
+    <p>Good</p>
+    <h4>My Hobbies</h4>
+    <ul class="Hobbies"></ul>
+
+    <script>
+      const head = document.getElementsByTagName("h1");
+      console.log(head[0].innerText);
+      head[0].innerText = "Super ra"; // updating text of heading
+
+      console.log(head[0].innerText);
+      const funs = document.getElementsByClassName("fun");
+      console.log(funs[0].innerText);
+      console.log(document.getElementById("note").innerText);
+      const changeText = document.getElementsByTagName("p");
+      console.log(changeText[0].innerText);
+      changeText[0].innerText = "Bad";
+      console.log(changeText[0].innerText);
+
+      console.log(document.querySelectorAll(".fun"));
+
+      const addEle = document.createElement("p");
+      addEle.innerText = "This is very super cool tool";
+
+      document.body.append(addEle);
+
+      const hobbiesData = [
+        "Reading",
+        "Painting",
+        "Photography",
+        "Hiking",
+        "Gardening",
+        "Cooking",
+        "Playing musical instruments",
+        "Dancing",
+        "Traveling",
+        "Knitting",
+      ];
+
+      document.querySelector(".Hobbies").innerHTML = newData(
+        hobbiesData,
+        "<li>",
+        "</li>"
+      );
+
+      function newData(hobbiesData, start, end) {
+        const mergeData = hobbiesData.map((x) => {
+          return `${start} ${x} ${end}`;
+        });
+        return mergeData.join("");
+      }
+    </script>
+  </body>
+</html>

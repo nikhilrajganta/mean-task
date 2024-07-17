@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .social-media {
+        color: blue;
+        font-size: 42px;
+      }
+      body {
+        margin: 0;
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        background: red;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+      }
+      .box:hover {
+        /* transform: rotate(360deg) scale(1.5);
+        background: green;
+        border-radius: 50%; */
+        transform: scale(1.3);
+        background: blue;
+      }
+      .box:active {
+        transform: scale(0.9);
+      }
+      .hobbies {
+        font-size: 42px;
+        list-style: none;
+      }
+      /* Decorative purpose */
+      .hobbies > li:before {
+        content: "⚠️";
+      }
+      .hobbies > li:after {
+        content: "✅";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p class="social-media"><i class="fa-brands fa-instagram"></i> Instagram</p> -->
+    <div class="box"></div>
+    <ul class="hobbies">
+      <li>Nikhil</li>
+      <li>Raj</li>
+      <li>Guna</li>
+      <li>Shekar</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+body{
+    font-family: sans-serif;
+    background: whitesmoke;
+}
+.main{
+    /* height: 300px; */
+    /* aspect-ratio: 1 / 1; */
+    max-width: 300px;
+    /* min-width: ; */
+    background: white;
+    border-radius: 15px;
+    padding: 20px;    
+}
+
+
+.content > li::before {
+    content: "✓";
+    position: absolute;
+    left:0px;
+  }
+
+.content > li:nth-child(n + 2)::before{
+    content: "✕";
+}
+  li{
+    display: grid;
+    justify-content: left;
+    padding-left: 20px;
+  }
+
+  .content{
+    position: relative;
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    color: #181059;
+    width: 200px ;
+    /* t: #b9b7cd */
+  }
+  .price > span{
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+.price{
+    margin: 20px 0px;
+}
+
+.btn{
+    background: #8645ff;
+    height: 45px;
+    border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+
+/* .trailing{
+    background: #8645ff;
+    height: 30px;
+    width: 40px;
+    font-size: 12px;
+    border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+} */
+.main:hover{
+    background: darkblue;
+    color: white;
+    transform: scale(0.99);
+    transition: all 0.6s;
+}
+
+.main:hover .content{
+    color: white;
+}
+.main:hover .discount{
+    background: white;
+    height: 30px;
+    width: 40px;
+    font-size: 12px;
+    border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.heading {
+    display : flex ; 
+    flex-direction: row ;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+
+.discount{
+    color: white;
+}
